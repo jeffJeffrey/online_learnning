@@ -1,0 +1,60 @@
+
+ .ul{
+    color:rgb(54, 221, 68);
+    font-size: 100px;
+    margin-left: 30px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    font-size: 23px; 
+    background-image:linear-gradient(rgba(180, 93, 180, 0.26), rgba(47, 209, 74, 0.281)), url(../image/trois.jpg);
+
+}
+.container1{
+    display: block;
+}
+
+.blocka, .blockb{
+    display: flex;
+    align-items: center;
+}
+
+
+.containerp{
+    border: 2px solid  #060706c7;
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    margin-left: 20%;
+    margin-top: 10%;
+    background-color:rgba(236, 245, 236, 0.801) ;
+    font-size: 20px;
+    color: black;
+    right: 20px;
+    margin-bottom: 20px;
+}
+.container2{
+    margin: 0px;
+    width:200px;
+    
+}
+    
+.containerp img{
+    width: 60px;
+    height: 50%;
+    position: relative; 
+    left: 20px; 
+   
+
+}
+
+.modif img
+{
+   width: 90vh;
+   height: 80vh;
+   margin-left: 45px;
+   margin-top: 70px;
+  
+}

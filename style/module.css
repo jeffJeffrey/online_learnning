@@ -1,0 +1,269 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f2f2f2;
+    background-image:linear-gradient(rgba(196, 235, 124, 0.062), rgba(47, 209, 74, 0.493)),  url(../image/shutterstock_Kate\ Kultsevych_sito.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    position: absolute;
+    left: 400px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+    
+
+}
+
+.navbar a{
+    color: rgb(231, 233, 241);
+    font-size:20px;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+
+.navbar .logo{
+    font-size: 2m;
+    font-weight: bold;
+}
+
+.navbar .logo span{
+    color: rgb(16, 182, 16);
+    font-size: 120%;
+}
+.navbar .nav-links ul{
+    display: flex;
+    align-items: center;
+}
+.navbar .nav-links ul .lien{
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links ul li{
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+
+.searchinput{
+    border-radius: 15px;
+    padding: 5px;
+    border-color: #1ffb2a;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #9df8a13d;
+    color: #fff;
+    margin-bottom: -2%;
+
+}
+
+
+.navbar .nav-links ul li .active{
+    color: #c8ec23f5;
+    font-weight: 600px;
+}
+.navbar .menu-en-burgers{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+
+}
+
+
+
+@media screen and (max-width:900px) {
+    .navbar{
+        padding: 0;
+    }
+
+    .navbar .logo{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+
+    .navbar .menu-en-burgers{
+        display: block;
+    }
+    .nav-links{
+        top: 0%;
+        left: 0%;
+        position: absolute;
+        background-color: rgba(113, 113, 119, 0.418);
+        width: 122vh;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        backdrop-filter: blur(7px);
+        transition: all 0.5s;
+    }
+    .nav-links.mobile-menu{
+        margin-left: 0;
+    
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+
+    .navbar .nav-links ul  li{
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+}
+
+.navbar .nav-links .lien li a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+
+/*design slide bar*/
+
+
+
+.slide{
+    height: 100%;
+    width: 200px;
+    margin-top: 200px;
+    position: absolute;
+    background-color: #ffff;
+    transition: 0.5s ease;
+}
+
+h1{
+    color:rgb(16, 182, 16);
+    font-weight: 880;
+    text-align: right;
+    padding-right: 30px;pointer-events: none;
+}
+
+.matiere ul li{
+    list-style: none;
+
+}
+.matiere ul li a{
+    color: #011a41;
+    font-weight: 500;
+    padding: 5px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.matiere ul li a{
+    background-color: #c8ec23f5;
+ 
+}
+.matiere ul li:hover a{
+    color: #fff;
+    background-color:rgb(16, 182, 16) ;
+    font-weight: normal;
+}
+
+.slide{
+    margin-top: 30px;
+    margin-left: 5px;
+    box-shadow: 0 0 15px rgb(12, 12, 11);
+}
+
+
+.slide h1{
+    text-align: center;
+}
+
+/*dynamic space*/
+.uv{
+    position: relative;
+    top: 110px;
+    left: 150px;
+}
+
+.menu{
+    position: relative;
+    margin-top: 20px;
+    left: 200px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    height: 20px;
+    box-sizing: border-box;
+    background-color: rgb(150, 170, 170);
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+.menu ul{
+    position: relative;
+    left: 100px;
+}
+.menu ul li{
+    margin: 40px;
+}
+
+.menu ul li a{
+    font-size: 20px;
+    color: white;
+    background-color:#24d42d ;
+    padding: 10px;
+    border-radius: 15px;
+}
+.menu ul li:hover a{
+    background-color: rgb(252, 111, 18);
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.dynamiqueSpace{
+    position: relative;
+    left: 200px;
+    box-sizing: border-box;
+    background-color: rgb(221, 241, 241);
+    width: 60%;
+    height: 500px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.dynamiqueSpace{
+    padding: 20px;
+}
+
+#video{
+    margin: 40px;
+    position: relative;
+    left: 50px;
+}
+
+.current-link{
+    color: #1ffb2a;
+}
