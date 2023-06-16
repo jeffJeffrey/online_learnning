@@ -13,7 +13,7 @@ $email = $_SESSION['email'];
 $subject = 'jobsite Form Submilted';
 $body = $_GET['message'];
 $body=wordwrap($message,30,"\r\n");
-$headers= 'From:'.$mail;
+$headers= 'From:'.$email;
 if(isset($_GET['submit'])){
     foreach($tabDest as $to){
         mail($to,$subject,$body,$headers);
